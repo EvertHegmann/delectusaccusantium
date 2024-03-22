@@ -1,0 +1,63 @@
+- title: Tutorial
+  items:
+    - id: before-we-start-the-tutorial
+      title: Before We Start the Tutorial
+      href: /tutorial/tutorial.html#before-we-start-the-tutorial
+      forceInternal: true
+      subitems:
+        - id: what-were-building
+          title: What Are We Building?
+          href: /tutorial/tutorial.html#what-are-we-building
+          forceInternal: true
+        - id: prerequisites
+          title: Prerequisites
+          href: /tutorial/tutorial.html#prerequisites
+          forceInternal: true
+    - id: setup-for-the-tutorial
+      title: Setup for the Tutorial
+      href: /tutorial/tutorial.html#setup-for-the-tutorial
+      forceInternal: true
+      subitems:
+        - id: help-im-stuck
+          title: Help, I'm Stuck!
+          href: /tutorial/tutorial.html#help-im-stuck
+          forceInternal: true
+    - id: overview
+      title: Overview
+      href: /tutorial/tutorial.html#overview
+      forceInternal: true
+      subitems:
+        - id: inspecting-the-starter-code
+          title: Inspecting the Starter Code
+          href: /tutorial/tutorial.html#inspecting-the-starter-code
+          forceInternal: true
+        - id: develop-the-contract
+          title: Develop the Contract
+          href: /tutorial/tutorial.html#develop-the-contract
+        - id: metamask
+          title: Metamask
+          href: /tutorial/tutorial.html#metamask
+        - id: interact-with-contract
+          title: Interact with Contract
+          href: /tutorial/tutorial.html#interact-with-contract
+          forceInternal: true
+        - id: run-the-tests
+          title: Run the tests
+          href: /tutorial/tutorial.html#run-the-tests
+    - id: deploy-it
+      title: Deploy It
+      href: /tutorial/tutorial.html#deploy-it
+      forceInternal: true
+      subitems:
+        - id: preparation
+          title: Preparation
+          href: /tutorial/tutorial.html#preparation
+          forceInternal: true
+        - id: publish-smart-contract-and-assets
+          title: Publish Smart Contract and Assets
+          href: /tutorial/tutorial.html#publish-smart-contract-and-assets
+          forceInternal: true
+        - id: wrapping-up
+          title: Wrapping Up
+          href: /tutorial/tutorial.html#wrapping-up
+          forceInternal: true

@@ -1,0 +1,60 @@
+{
+  "name": "@dapp-stack/wallet",
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "description": "Generate Wallet from environment as well as display private key",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "shx rm -rf lib",
+    "lint": "tslint --fix --project .",
+    "doc": "typedoc --options ../../typedoc.json --out ../../documentation/wallet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Dapp-Stack/Dapp-Stack.git"
+  },
+  "keywords": [
+    "web3",
+    "DApp Stack",
+    "typescript",
+    "ts",
+    "ethers.js"
+  ],
+  "author": {
+    "name": "John Solon",
+    "email": "john.solon12@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dapp-Stack/Dapp-Stack/issues"
+  },
+  "homepage": "https://dapp-stack.org",
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.9.4",
+    "@types/signale": "^1.2.0",
+    "shx": "^0.2.2",
+    "tslint": "5.11.0",
+    "typedoc": "^0.13.0",
+    "typescript": "3.1.1"
+  },
+  "dependencies": {
+    "@dapp-stack/connect": "^0.4.0",
+    "@dapp-stack/environment": "^0.4.0",
+    "ethers": "^4.0.3",
+    "fs-extra": "^7.0.0",
+    "keythereum": "^1.0.4",
+    "signale": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

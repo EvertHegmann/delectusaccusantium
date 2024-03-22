@@ -1,0 +1,58 @@
+{
+  "name": "@dapp-stack/monorepo",
+  "private": true,
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "description": "Monorepo scripts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "shx rm -rf lib",
+    "lint": "tslint --fix --project .",
+    "find_unused_deps": "run-s build script:find_unused_deps",
+    "check_deps_versions": "run-s build script:check_deps_versions",
+    "script:find_unused_deps": "node ./lib/src/findUnusedDependencies.js",
+    "script:check_deps_versions": "node ./lib/src/checkDependenciesVersions.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Dapp-Stack/Dapp-Stack.git"
+  },
+  "keywords": [
+    "web3",
+    "DApp Stack",
+    "typescript",
+    "ts",
+    "monorepo"
+  ],
+  "author": {
+    "name": "John Solon",
+    "email": "john.solon12@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dapp-Stack/Dapp-Stack/issues"
+  },
+  "homepage": "https://dapp-stack.org",
+  "devDependencies": {
+    "@types/depcheck": "^0.6.0",
+    "@types/lodash": "4.14.116",
+    "@types/node": "^10.9.4",
+    "npm-run-all": "^4.1.2",
+    "shx": "^0.2.2",
+    "tslint": "5.11.0",
+    "typescript": "3.1.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "depcheck": "^0.6.9",
+    "lodash": "^4.17.10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

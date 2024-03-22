@@ -1,0 +1,14 @@
+node_modules
+
+.geth
+
+logs
+
+contracts/build
+contracts/doc
+contracts/security
+contracts/coverage
+
+tracker.json
+public/tracker.json
+src/assets/tracker.json

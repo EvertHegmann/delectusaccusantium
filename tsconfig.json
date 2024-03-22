@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "sourceMap": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types"],
+    "strict": true,
+    "composite": true,
+    "declarationMap": true
+  },
+  "references": [
+    { "path": "./packages/api" },
+    { "path": "./packages/cli" },
+    { "path": "./packages/compiler" },
+    { "path": "./packages/connect" },
+    { "path": "./packages/contract-utils" },
+    { "path": "./packages/debugger" },
+    { "path": "./packages/deployer" },
+    { "path": "./packages/doc" },
+    { "path": "./packages/environment" },
+    { "path": "./packages/ethereum" },
+    { "path": "./packages/ipfs" },
+    { "path": "./packages/monorepo" },
+    { "path": "./packages/redux-eth" },
+    { "path": "./packages/redux-ipfs" },
+    { "path": "./packages/scripts" },
+    { "path": "./packages/secrets" },
+    { "path": "./packages/security" },
+    { "path": "./packages/test" },
+    { "path": "./packages/wallet" },
+    { "path": "./packages/web" }
+  ]
+}

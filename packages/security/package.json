@@ -1,0 +1,58 @@
+{
+  "name": "@dapp-stack/security",
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "description": "Security check for contracts using mythril",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "shx rm -rf lib",
+    "lint": "tslint --fix --project .",
+    "doc": "typedoc --options ../../typedoc.json --out ../../documentation/security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Dapp-Stack/Dapp-Stack.git"
+  },
+  "keywords": [
+    "web3",
+    "DApp Stack",
+    "typescript",
+    "ts",
+    "docker",
+    "security",
+    "mythril"
+  ],
+  "author": {
+    "name": "John Solon",
+    "email": "john.solon12@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dapp-Stack/Dapp-Stack/issues"
+  },
+  "homepage": "https://dapp-stack.org",
+  "devDependencies": {
+    "@types/dockerode": "^2.5.5",
+    "@types/signale": "^1.2.0",
+    "shx": "^0.2.2",
+    "tslint": "5.11.0",
+    "typedoc": "^0.13.0",
+    "typescript": "3.1.1"
+  },
+  "dependencies": {
+    "@dapp-stack/environment": "^0.4.0",
+    "dockerode": "^2.5.7",
+    "signale": "^1.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

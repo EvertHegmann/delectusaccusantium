@@ -1,0 +1,64 @@
+{
+  "name": "@dapp-stack/ethereum",
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "description": "Start and manage an ethereum chain using Geth, Ganache or just connect to infura",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "install"
+  ],
+  "scripts": {
+    "postinstall": "node install/index.js",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "shx rm -rf dist/src/strategies; shx rm -rf dist/src/index*",
+    "lint": "tslint --fix --project .",
+    "doc": "typedoc --options ../../typedoc.json --out ../../documentation/ethereum"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Dapp-Stack/Dapp-Stack.git"
+  },
+  "keywords": [
+    "web3",
+    "DApp Stack",
+    "typescript",
+    "ts",
+    "geth",
+    "infura"
+  ],
+  "author": {
+    "name": "John Solon",
+    "email": "john.solon12@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dapp-Stack/Dapp-Stack/issues"
+  },
+  "homepage": "https://dapp-stack.org",
+  "devDependencies": {
+    "@dapp-stack/environment": "^0.4.0",
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.9.4",
+    "@types/request": "^2.47.1",
+    "@types/tar-fs": "^1.16.1",
+    "shx": "^0.2.2",
+    "tslint": "5.11.0",
+    "typedoc": "^0.13.0",
+    "typescript": "3.1.1"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "go-platform": "^1.0.0",
+    "gunzip-maybe": "^1.4.1",
+    "request": "^2.88.0",
+    "tar-fs": "^1.16.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

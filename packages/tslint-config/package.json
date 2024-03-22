@@ -1,0 +1,41 @@
+{
+  "name": "@dapp-stack/tslint-config",
+  "private": true,
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "description": "Lint rules related to DApp Stack for TSLint",
+  "main": "tslint.json",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Dapp-Stack/Dapp-Stack.git"
+  },
+  "keywords": [
+    "tslint",
+    "config",
+    "DApp Stack",
+    "typescript",
+    "ts"
+  ],
+  "author": {
+    "name": "John Solon",
+    "email": "john.solon12@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dapp-Stack/Dapp-Stack/issues"
+  },
+  "homepage": "https://dapp-stack.org",
+  "dependencies": {
+    "tslint": "5.11.0",
+    "typescript": "3.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "0.4.2",
+  "packages": [
+    "packages/*",
+    "apps/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "test/**/*",
+        "*.md",
+        "scripts",
+        "lib",
+        "tslint.json",
+        "tsconfig.json"
+      ]
+    }
+  },
+  "useWorkspaces": true,
+  "npmClient": "yarn"
+}
